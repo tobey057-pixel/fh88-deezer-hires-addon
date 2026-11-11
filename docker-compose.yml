@@ -1,0 +1,12 @@
+services:
+  fh88-deezer-hires:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: 8080
+      DEEZER_ENABLED: "true"
+      INTERNET_ARCHIVE_ENABLED: "true"
+      # Optional: restrict requests with a shared key if your deployment supports headers.
+      ADDON_API_KEY: ""
+    restart: unless-stopped
