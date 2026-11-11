@@ -1,0 +1,1 @@
+# fh88-deezer-hires-addon
